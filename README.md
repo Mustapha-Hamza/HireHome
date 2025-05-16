@@ -1,54 +1,39 @@
-# React + TypeScript + Vite
+# 🏡 HireHome
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Your Home Away From Home**
 
-Currently, two official plugins are available:
+HireHome is a modern and elegant web application designed to help users discover luxurious, handpicked vacation homes across the globe. Whether you're looking for a secluded island villa, a cozy mountain lodge, a stylish beachfront property, or a peaceful countryside estate, HireHome brings the world’s finest getaways to your fingertips.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌍 Live Preview
 
-## Expanding the ESLint configuration
+[View Live Website](#) – Replace with your deployment link (e.g., Vercel, Netlify)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📌 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🌴 **Island Villas** – Luxury homes with ocean views and private beaches
+- 🏔️ **Mountain Top Lodges** – Cozy retreats with access to scenic peaks and natural trails
+- 🌊 **Beachfront Houses** – Seaside stays with direct beach access and modern designs
+- 🌾 **Countryside Estates** – Serene homes surrounded by green landscapes and fresh air
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Each location features:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- High-quality images
+- Descriptive overviews
+- Price per night
+- Guest capacity and amenities
+- Real user ratings and reviews
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, TypeScript, Tailwind CSS, React Router, Framer Motion
+- **State Management:** Redux Toolkit (or the state library you use)
+- **Data Fetching:** (Optional) React Query or API service
+- **Tooling:** Vite, VS Code, GitHub, Figma
+
+---
+
+## 📁 Project Structure
