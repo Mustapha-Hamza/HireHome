@@ -59,10 +59,14 @@ const Header = () => {
 
   // ✅ FIXED: Navigate to a home type and close menus properly
   const handleNavigate = (path: string) => {
-    navigate(path);
-    window.scrollTo(0, 0);
     setIsExploreOpen(false);
     setIsMenuOpen(false);
+
+    // Slight delay allows menu to close before navigation triggers
+    setTimeout(() => {
+      navigate(path);
+      window.scrollTo(0, 0);
+    }, 100);
   };
 
   return (
@@ -213,7 +217,10 @@ const Header = () => {
                     {homeTypes.map((type) => (
                       <button
                         key={type.id}
-                        onClick={() => handleNavigate(`/home-types/${type.id}`)}
+                        onClick={() => {
+                          console.log("Clicked:", type.id); // ✅ Check this fires
+                          handleNavigate(`/home-types/${type.id}`);
+                        }}
                         className="block w-full text-left px-4 py-2 text-sm text-dark-800 hover:bg-gold-50 hover:text-gold-500 transition-colors"
                         role="menuitem"
                       >
