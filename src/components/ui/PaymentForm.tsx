@@ -129,9 +129,9 @@ const PaymentForm = ({ bookingData }: PaymentFormProps) => {
               />
               <label
                 htmlFor="card"
-                className="flex items-center cursor-pointer"
+                className="flex items-center cursor-pointer text-sm sm:text-base"
               >
-                <FaCreditCard className="mr-2 text-gray-600" />
+                <FaCreditCard className="mr-2  text-gray-600" />
                 Credit/Debit Card
               </label>
             </div>
@@ -154,7 +154,7 @@ const PaymentForm = ({ bookingData }: PaymentFormProps) => {
               />
               <label
                 htmlFor="paypal"
-                className="flex items-center cursor-pointer"
+                className="flex items-center cursor-pointer text-sm sm:text-base"
               >
                 <FaPaypal className="mr-2 text-blue-600" />
                 PayPal
